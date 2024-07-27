@@ -1,41 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Engineering Course - Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>LearnBe4 - Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body class="light-theme">
+<body>
     <header>
-        <nav>
-            <ul>
-                <li><h1>LearnBe4</h1></li>
-                <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="menu.html">Menu</a></li> -->
-                <li><a href="notes.html">Notes</a></li>
-                <li><a href="course.html">Course</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-                
-
-            </ul>
-            <button id="theme-toggle">
-                <span class="icon sun-icon">
-                    <!-- SVG for sun icon -->
-                </span>
-                <span class="icon moon-icon">
-                    <!-- SVG for moon icon -->
-                </span>
-            </button>
-        </nav>
+        <div class="container">
+            <img src="images/logo.png" alt="LearnBe4 Logo" class="logo">
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Course</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- <li><a href="/lol/indexlol.html">Login</a></li> -->
+                    
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <section id="home">
-        <h1>Welcome to the Data Engineering Course</h1>
-        <p>Learn the fundamentals of data engineering and become an expert in AWS tools and technologies.</p>
-    </section>
-
-    <script src="scripts.js"></script>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 >Welcome to 
+                    <span class="highlight"style="color: rgb(126 34 206">LearnBe4</span></h1>
+                <p>Your ultimate Destination to master Data Engineering</p>
+                <a href="courses.html" class="btn">Explore Course</a>
+            </div>
+        </section>
+    </main>
+    <!-- <footer>
+        <div class="container">
+            <p>Copyright &copy 2024 LearnBe4.in</p>
+        </div>
+    </footer> -->
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
