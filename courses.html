@@ -25,102 +25,334 @@
     <main>
         <section class="courses">
             <div class="container">
-                <h1 >Course Introduction</h1>
-                <section>
-                    <h3>1. Introduction to Data Engineering</h3>
-                    <ul>
-                        <li>Overview of Data Engineering Roles and Responsibilities</li>
-                        <li>Importance of Data in Modern Applications</li>
-                        <li>Basics of AWS and its Ecosystem</li>
-                    </ul>
-                </section>
-    
-                <section>
-                    <h3>2. Amazon S3 (Simple Storage Service)</h3>
-
-                    <ul>
-                        <li>Understanding S3 Buckets, Objects, and Storage Classes</li>
-                        <li>S3 Data Management and Best Practices</li>
-                        <li>Security and Permissions in S3</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>3. AWS Glue</h3>
-                    <ul>
-                        <li>Introduction to AWS Glue and its Components</li>
-                        <li>Setting up Glue Crawlers to Discover Data</li>
-                        <li>Creating and Managing Glue ETL Jobs</li>
-                        <li>Using the Glue Data Catalog</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>4. Amazon Athena</h3>
-                    <ul>
-                        <li>Introduction to Athena for Serverless Querying</li>
-                        <li>Setting up Athena with S3 Data Sources</li>
-                        <li>Writing and Optimizing SQL Queries in Athena</li>
-                    </ul>
-                </section>
-        
-                <section>
-                    <h3>5. Introduction to PySpark</h3>
-                    <ul>
-                        <li>Overview of Apache Spark and PySpark</li>
-                        <li>Setting up a Local PySpark Environment</li>
-                        <li>Basic PySpark Data Structures: RDDs, DataFrames, and Datasets</li>
-                    
-                    </ul>
-                </section>
-                <section>
-                    <h3>6. PySpark DataFrames</h3>
-                    <ul>
-                        <li>Data Ingestion and Transformation using PySpark</li>
-                         <li>Working with DataFrames and Performing Operations</li>
-                        <li>Spark SQL for Structured Data Processing</li>
-                    </ul>
-                </section>
-        
-                <section>
-                    <h3>7. Amazon EMR (Elastic MapReduce)</h3>
-                    <ul>
-                        <li>Introduction to EMR and its Use Cases</li>
-                        <li>Setting up an EMR Cluster</li>
-                        <li>Running PySpark Jobs on EMR</li>
-                    </ul>
-                </section>
-        
-                <section>
-                    <h3>8. Data Pipelines and Workflows</h3>
-                    <ul>
-                        <li>Designing ETL Pipelines using AWS Glue and PySpark</li>
-                        <li>Automation with AWS Lambda and Step Functions</li>
-                        <li>Monitoring and Logging in AWS</li>
-                    </ul>
-                </section>
-        
-                <section>
-                    <h3>9. Advanced Topics</h3>
-                    <ul>
-                        <li>Optimizing Spark Jobs and Performance Tuning</li>
-                        <li>Handling Large Datasets and Partitioning in S3 and Spark</li>
-                        <li>Security Best Practices in AWS Data Engineering</li>
-                    </ul>
-                </section>
-        
-                <section>
-                    <h3>10. Capstone Project</h3>
-                    <ul>
-                        <li>Real-World Data Engineering Project using AWS Tools</li>
-                        <li>Designing and Implementing an End-to-End Data Pipeline</li>
-                        <li>Presentation and Review of Project Outcomes</li>
-                    </ul>
-                </section>
-                
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <br>
+                    <h1 style="color: blueviolet;">Data Engineering Course Syllabus</h1>
+                </br>
+            
+                <h2>Part 1: Introduction to Big Data and Hadoop</h2>
+            
+                <h3>1. Introduction to Big Data</h3>
+                <ul>
+                    <li>What is Big Data?</li>
+                    <li>Examples of Big Data</li>
+                    <li>Reasons for Big Data Generation</li>
+                    <li>Why Big Data Deserves Your Attention</li>
+                    <li>Use Cases of Big Data</li>
+                    <li>Different Options for Analyzing Big Data</li>
+                </ul>
+            
+                <h3>2. Introduction to Hadoop</h3>
+                <ul>
+                    <li>What is Hadoop?</li>
+                    <li>History of Hadoop</li>
+                    <li>How Hadoop Name Was Given</li>
+                    <li>Problems with Traditional Large-Scale Systems and Need for Hadoop</li>
+                    <li>Understanding Hadoop Architecture</li>
+                    <li>Fundamentals of HDFS (Blocks, Name Node, Data Node, Secondary Name Node)</li>
+                    <li>Rack Awareness</li>
+                    <li>Read/Write from HDFS</li>
+                    <li>HDFS Federation and High Availability</li>
+                </ul>
+            
+                <h3>3. Starting Hadoop</h3>
+                <ul>
+                    <li>Setting Up Single Node Hadoop Cluster (Pseudo Mode)</li>
+                    <li>Understanding Hadoop Configuration Files</li>
+                    <li>Hadoop Components: HDFS, MapReduce</li>
+                    <li>Overview of Hadoop Processes</li>
+                    <li>Overview of Hadoop Distributed File System</li>
+                    <li>The Building Blocks of Hadoop</li>
+                    <li>Hands-On Exercise: Using HDFS Commands</li>
+                </ul>
+            
+                <h3>4. Hadoop Processing Framework: MapReduce</h3>
+                <ul>
+                    <li>Understanding MapReduce</li>
+                    <li>Architecture of MapReduce</li>
+                    <li>Issues/Drawbacks of Using MapReduce</li>
+                    <li>Alternatives to MapReduce</li>
+                </ul>
+            
+                <h3>5. Hadoop Resource Manager (YARN)</h3>
+                <ul>
+                    <li>What is YARN?</li>
+                    <li>YARN Architecture</li>
+                    <li>Application Master, Node Manager &amp; Resource Manager</li>
+                </ul>
+            
+                <h3>6. Hive</h3>
+                <ul>
+                    <li>Introduction to Apache Hive</li>
+                    <li>Architecture of Hive</li>
+                    <li>Hive Data Types</li>
+                    <li>HiveQL (HQL)</li>
+                    <li>Types of Tables in Hive</li>
+                    <li>Partitioning</li>
+                    <li>File Formats</li>
+                    <li>Bucketing</li>
+                    <li>Indexes</li>
+                    <li>Views</li>
+                    <li>Executing Hive Queries from Linux Terminal</li>
+                    <li>Executing Hive Queries from a File</li>
+                    <li>Hands-On Exercise</li>
+                    <li>Hive with HBase Integration</li>
+                    <li>Window Functions</li>
+                    <li>Analytical Functions</li>
+                </ul>
+            
+                <h3>7. Sqoop</h3>
+                <ul>
+                    <li>Introduction to Sqoop &amp; Architecture</li>
+                    <li>Import Data from RDBMS to HDFS</li>
+                    <li>Importing Data from RDBMS to Hive</li>
+                    <li>Sqoop Incremental Imports</li>
+                    <li>Sqoop Jobs</li>
+                    <li>Hands-On Exercise</li>
+                </ul>
+            
+                <h3>8. HBase</h3>
+                <ul>
+                    <li>Introduction to HBase</li>
+                    <li>Architecture of HBase</li>
+                    <li>Exploring HBase Master &amp; Region Server</li>
+                    <li>Exploring Zookeeper</li>
+                    <li>CRUD Operation of HBase with Examples</li>
+                    <li>Hive Integration with HBase</li>
+                    <li>Hands-On Exercise on HBase</li>
+                </ul>
+            
+                <h3>9. Oozie</h3>
+                <ul>
+                    <li>Both Standalone and Cluster</li>
+                    <li>Oozie Metadata Management</li>
+                </ul>
+            
+                <h2>Part 2: Python for Data Engineers</h2>
+                <ul>
+                    <li>Introduction to Python</li>
+                    <li>Installation of Python</li>
+                    <li>Basics of Python</li>
+                    <li>Python Sequences</li>
+                    <li>Python Functions</li>
+                    <li>Error and Exception Handling</li>
+                    <li>Python Objects and Classes</li>
+                </ul>
+            
+                <h2>Part 3: Spark Programming in Python (PySpark) Using Free Databricks Community</h2>
+            
+                <h3>1. Introduction to Apache Spark</h3>
+                <ul>
+                    <li>Key Features of Apache Spark</li>
+                    <li>Components of Apache Spark</li>
+                    <li>Spark Architecture: Jobs, Stages, and Tasks</li>
+                    <li>Key Abstractions: RDD, DataFrame, Dataset</li>
+                    <li>All about RDD</li>
+                    <li>Parallelism in Spark</li>
+                    <li>Wide and Narrow Transformations</li>
+                    <li>DAG vs. Lineage Graph</li>
+                </ul>
+            
+                <h3>2. Spark Core</h3>
+                <ul>
+                    <li>RDD Basics</li>
+                    <li>Creating RDDs</li>
+                    <li>RDD Operations</li>
+                    <li>Transformations</li>
+                    <li>Actions</li>
+                    <li>Lazy Evaluation</li>
+                    <li>Passing Functions to Spark</li>
+                    <li>Common Transformations and Actions</li>
+                    <li>Basic RDDs</li>
+                    <li>Converting Between RDD Types</li>
+                    <li>Persistence (Caching)</li>
+                </ul>
+            
+                <h4>Working with Key/Value Pairs</h4>
+                <ul>
+                    <li>Creating Pair RDDs</li>
+                    <li>Transformations on Pair RDDs</li>
+                    <li>Aggregations</li>
+                    <li>Grouping Data</li>
+                    <li>Joins</li>
+                    <li>Sorting Data</li>
+                    <li>Actions Available on Pair RDDs</li>
+                </ul>
+            
+                <h3>3. Introduction to Spark and Spark SQL</h3>
+            
+                <h4>Module 1: Understanding DataFrames</h4>
+                <ul>
+                    <li>What is a DataFrame?
+                        <ul>
+                            <li>Concept and Structure of DataFrames</li>
+                            <li>Comparison with RDDs</li>
+                        </ul>
+                    </li>
+                    <li>Creating DataFrames
+                        <ul>
+                            <li>From Existing RDDs</li>
+                            <li>From Structured Data Files (CSV, JSON, Parquet)</li>
+                            <li>From Databases (JDBC)</li>
+                            <li>Manually Creating DataFrames</li>
+                        </ul>
+                    </li>
+                    <li>Schema and Data Types
+                        <ul>
+                            <li>Defining and Inferring Schemas</li>
+                            <li>Understanding Spark Data Types</li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <h4>Module 2: DataFrame Operations</h4>
+                <ul>
+                    <li>Basic Operations
+                        <ul>
+                            <li>Selecting Columns</li>
+                            <li>Filtering Rows</li>
+                            <li>Sorting and Ordering Data</li>
+                            <li>Adding and Renaming Columns</li>
+                        </ul>
+                    </li>
+                    <li>Aggregations and Grouping
+                        <ul>
+                            <li>GroupBy and Aggregate Functions</li>
+                            <li>Pivot and Unpivot Operations</li>
+                        </ul>
+                    </li>
+                    <li>Joins
+                        <ul>
+                            <li>Types of Joins (Inner, Outer, Left, Right, Cross)</li>
+                            <li>Performing Joins with DataFrames</li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <h4>Module 3: Working with Built-in Functions</h4>
+                <ul>
+                    <li>Column Functions
+                        <ul>
+                            <li>Basic Column Functions (alias, cast, contains)</li>
+                            <li>String Functions</li>
+                            <li>Date and Time Functions</li>
+                            <li>Aggregate Functions</li>
+                        </ul>
+                    </li>
+                    <li>User-Defined Functions (UDFs)
+                        <ul>
+                            <li>Creating and Registering UDFs</li>
+                            <li>Using UDFs in DataFrames</li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <h4>Module 4: Advanced DataFrame Operations</h4>
+                <ul>
+                    <li>Window Functions
+                        <ul>
+                            <li>What are Window Functions?</li>
+                            <li>Applying Window Functions</li>
+                            <li>Types of Window Functions (Ranking, Analytical)</li>
+                        </ul>
+                    </li>
+                    <li>Handling Missing Data
+                        <ul>
+                            <li>Identifying Missing Data</li>
+                            <li>Dropping Missing Data</li>
+                            <li>Filling Missing Data</li>
+                        </ul>
+                    </li>
+                    <li>DataFrame Transformations
+                        <ul>
+                            <li>Map and FlatMap Operations</li>
+                            <li>Explode and Array Operations</li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <h4>Module 5: Performance Tuning</h4>
+                <ul>
+                    <li>Optimizing DataFrame Operations
+                        <ul>
+                            <li>Understanding Lazy Evaluation</li>
+                            <li>Caching and Persisting DataFrames</li>
+                            <li>Repartitioning and Coalescing</li>
+                        </ul>
+                    </li>
+                    <li>Understanding the Catalyst Optimizer
+                        <ul>
+                            <li>How Catalyst Optimizer Works</li>
+                            <li>Logical and Physical Plans</li>
+                            <li>Using EXPLAIN to Understand Query Plans</li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <h4>Module 6: Interfacing with Other Systems</h4>
+                <ul>
+                    <li>Reading and Writing Data
+                        <ul>
+                            <li>Reading Data from Various Sources (CSV, JSON, Parquet, Avro, ORC)</li>
+                            <li>Writing Data to Various Formats</li>
+                        </ul>
+                    </li>
+                    <li>Interacting with Databases
+                        <ul>
+                            <li>Using JDBC for Database Interactions</li>
+                            <li>Performing SQL Queries with DataFrames</li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <h4>Module 7: Spark SQL</h4>
+                <ul>
+                    <li>Running SQL Queries Programmatically
+                        <ul>
+                            <li>Registering DataFrames as Tables</li>
+                            <li>Executing SQL Queries on DataFrames</li>
+                        </ul>
+                    </li>
+                    <li>SQL Functions and Expressions
+                        <ul>
+                            <li>Built-in SQL Functions</li>
+                            <li>Complex SQL Queries</li>
+                        </ul>
+                    </li>
+                    <li>Hive Integration
+                        <ul>
+                            <li>Configuring Hive with Spark</li>
+                            <li>Using Hive UDFs and UDAFs in Spark</li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <h3>Module 8: Spark Internals</h3>
+                <ul>
+                    <li>Logical and Physical Planning</li>
+                    <li>Memory Management</li>
+                </ul>
+            
+                <h2>Part 4: AWS for Data Engineers</h2>
+                <ul>
+                    <li>Setup AWS Free Account</li>
+                    <li>IAM
+                        <ul>
+                            <li>Policies</li>
+                            <li>Roles</li>
+                        </ul>
+                    </li>
+                    <li>Amazon S3</li>
+                    <li>Spark on EMR</li>
+                    <li>Glue</li>
+                    <li>Athena</li>
+                </ul>
+            
+                <h2>Part 5: Projects</h2>
+            
+            
             </div>
-    
-        </section>
         
     </main>
     <footer>
